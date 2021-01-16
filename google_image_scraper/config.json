@@ -1,0 +1,9 @@
+{
+   "##comment##":"start_at 0 by default, end_at the last item by default",
+
+   "excel_file_path":"/Users/Jm 1/Desktop/extend bank list.xlsx",
+   "output_folder_path":"/Users/Jm 1/Desktop/tmp_google_img",
+   "start_at":"280",
+   "end_at":"290",
+   "output_file_prefix":"ba"
+}
