@@ -111,7 +111,8 @@ def get_first_img_data():
     return data
 
 def save_img(data, _id, domain_name):
-    filename = config["output_file_prefix"] + _id + IMG_EXT
+    #filename = config["output_file_prefix"] + _id + IMG_EXT
+    filename = _id + IMG_EXT
     try:
         res = urllib.request.urlopen(data)
     except Exception as e:
