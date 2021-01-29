@@ -44,7 +44,7 @@ def load_parameters():
     if not config["start_at"]:
         config["start_at"] = 0
     if not config["end_at"]:
-        config["end_at"] = len(domains) 
+        config["end_at"] = 0
 
     if not str(config["start_at"]).isnumeric() or not str(config["end_at"]).isnumeric():
         print("Invalid start_at || end_at index")
@@ -65,7 +65,7 @@ def validate_start_end_index(domains):
 
 def get_domains(excel_path):
     try:
-        df = pd.read_excel(excel_path)
+        df = pd.read_excel(excel_path, sheet_name="Results")
     except Exception as e:
         print(e)
         exit(-1)
@@ -137,7 +137,8 @@ os.chdir(config["output_folder_path"])
 
 open_chrome()
 
-start_index, end_index = config["start_at"], config["end_at"]
+start_index, end_index = config["start_at"], config["end_at"] if config["end_at"] != 0 else len(domains)
+print(end_index)
 for _id in list(domains.keys())[start_index:end_index]:
     keyword = " ".join([domains[_id], LOGO])
     search_with_keyword(keyword)

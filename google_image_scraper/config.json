@@ -1,9 +1,9 @@
 {
    "##comment##":"start_at 0 if empty, end_at the last item if empty",
 
-   "excel_file_path":"/Users/Jm 1/Desktop/extend bank list.xlsx",
+   "excel_file_path":"/Users/Jm 1/Desktop/verified_logo_tool/source_files/Information_Technology_Export 16_01_2021 17_44.xlsx",
    "output_folder_path":"/Users/Jm 1/Desktop/tmp_google_img",
-   "start_at":"280",
-   "end_at":"290",
+   "start_at":"",
+   "end_at":"",
    "output_file_prefix":"ba"
 }
